@@ -1,6 +1,6 @@
 <h1 align="center">Pixels of Data 📈🖍</h1>
 
-![alt text](https://github.com/dydg14/dydg14/blob/main/1637179783533.png)
+![alt text](https://github.com/dydg14/pixelsofdata/blob/main/20211118_165012_0000.png)
 <h3 align="center">Datasets/resources of my posts on <p><a href="https://www.instagram.com/pixelsofdata/">@pixelsofdata</a></p>
 </h3> 
 
