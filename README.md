@@ -1,6 +1,5 @@
-# Pixels of Data 📈🖍 
+# 📈🖍 Geometric Dots
 
-### Datasets/sources of my posts on [@pixelsofdata](https://www.instagram.com/pixelsofdata/) 
+### Datasets/sources of my posts on [@geometric.dots](https://instagram.com/geometric.dots) 
 
-![alt text](https://github.com/dydg14/pixelsofdata/blob/main/20211118_165012_0000.png)
 
