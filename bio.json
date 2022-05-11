@@ -1,0 +1,32 @@
+{
+  "basics": {
+    "name": "Hello, world!",
+    "label": "I'm Duygu.",
+    "picture": "https://techfolios.github.io/template/images/molly.png",
+    "email": "duygu.dgd6@gmail.com",
+    "summary": "looking for answers—<i>with the help of data science</i>—in a world in need of them. I like turning things upside down to see situations from various points of view and trying to contribute solutions behind the lines of code and databases. All knowledge is connected in some way. The fun is in making the connections. ",
+    "profiles": [
+      {
+        "network": "github",
+        "username": "",
+        "url": "http://github.com/dydg14"
+      },
+      {
+        "network": "medium",
+        "username": "",
+        "url": "https://medium.com/@dydg14"
+      },
+      {
+        "network": "instagram",
+        "username": "",
+        "url": "https://instagram.com/geometric.dots"
+      },
+    ]
+  },
+  "references": [
+    {
+      "name": "",
+      "reference": ""
+    }
+  ]
+}
