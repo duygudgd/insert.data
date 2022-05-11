@@ -1,0 +1,101 @@
+<!-- Home page design with small circular image bisecting card. -->
+
+{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
+{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
+{% assign num_essays = essay_pages.size %}
+{% assign num_projects = project_pages.size %}
+
+<div style="height: 100%; margin-top: -75px" class="ui middle aligned grid ">
+
+  <div class="column">
+
+    <div style="position: relative; top: 75px; z-index: 1" class="ui fluid centered small circular image">
+      <img src="{{ site.data.bio.basics.picture }}">
+    </div>
+
+
+    <div style="max-width: 500px; padding-top: 75px; margin-top: 0px" class="ui fluid centered card">
+
+      <div class="center aligned content">
+        <span class="header"><h1>{{ site.data.bio.basics.name }} <span class="wave"><img src="/images/Hand.gif" width="35px"></span> </h1></span>
+        <div class="meta">
+          <span class="date"><h2>{{ site.data.bio.basics.label }}</h2></span>
+        </div>
+        <div class="center aligned description">
+          {{ site.data.bio.basics.summary }}
+        </div>
+      </div>
+      <div class="center aligned content">
+        <div class="description">
+          <i>“If one day, my words are against science, choose science."</i> —Atatürk
+          {% for interest in site.data.bio.interests %}
+            {{ interest.name }}{% if forloop.last != true %}, {% endif %}
+          {% endfor %}
+
+        </div>
+      </div>
+      <div class="center aligned extra content">
+        {% include home-network-links.html %}
+      </div>
+      <div class="center aligned content">
+        <a href="{{ site.baseurl}}/projects/">
+          <button class="ui basic button"><b style="color:#20b2aa;" >Projects</b> ({{ num_projects }})</button>
+        </a>
+        <a href="{{ site.baseurl}}/essays/">
+          <button class="ui basic button"><b style="color:#662bfe;" >Blog</b> ({{ num_essays }})</button>
+        </a>
+        <a href="{{ site.baseurl}}/bio/">
+          <button class="ui basic button"><b style="color:#e088c2;" >{{ site.bio-page-label }}</b></button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Hiermee heb ik achtergrond veranderd alinea verwijderen als je orginele wilt -->
+<script type="text/javascript">
+  /* Terrible ugly hack to get nice background image on main page without changing other templates */
+  document.addEventListener("DOMContentLoaded", function() {
+      var body = document.getElementsByTagName("body")[0];
+      body.style.cssText =
+          'background: url("../images/background-glitch.jpg");' +
+          'background-size: auto;' +
+          'background-position: center;' +
+          'background-repeat: no-repeat;';
+
+      var uhbtns = document.getElementsByClassName("uhbtn");
+      for(var i = 0; i < uhbtns.length; i++) {
+          uhbtns[i].cssText = "background-color: green;";
+      }
+  });
+
+</script>
+
+
+
+
+<!-- Naar beneden beweging bij start alinea verwijderen als je niet meer wilt -->
+<script>
+
+  function onStart(){
+      $('.column').transition({
+      animation: 'drop in' //"in" make a reverse animation
+    });
+  }
+
+  onStart();
+
+  $('#flip-box').hover(function() {
+    $(this).toggleClass('active');
+  });
+
+</script>
+
+<style>
+  .icon-color:hover{
+    color: rgb(75, 113, 218);
+    transition: 0.2s;
+  }
+</style>
